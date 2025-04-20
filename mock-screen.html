@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mock.css">
+    <link rel="stylesheet" href="mock-ui.css">
+    <link rel="stylesheet" href="mock-ui2.css">
+    <link rel="stylesheet" href="mock-screen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="mock-body">
+
+    <section class="mock-window">
+
+        <div class="mock-left">
+
+            <div class="left-pt1">
+                <div class="mk-title"></div>
+                <div id="timer" class="timer">20:00</div>
+            </div>
+
+            <div class="left-pt2">
+                <div class="subjects">
+                    <div>General English <i class="fa-solid fa-circle-info"></i></div>
+                    <div>Quantative Aptitude <i class="fa-solid fa-circle-info"></i> </div>
+                    <div>Reasoning Ability <i class="fa-solid fa-circle-info"></i></div>
+                </div>
+                <div class="lang">
+                    <p>View in </p>
+                    <select name="" id="language-select" onchange="translateText()">
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+
+            </div>
+            <!-- ..................................... -->
+            <div class="main-ques-div">
+
+                <div class="ques-data">
+                    <div class="qu-data-left">
+                        <p>Question : <span class="ques-no">1</span></p>
+                        <div class="ques-marks">
+
+                            <span class="ans-selct crt">+1</span>
+
+                            <span class="ans-selct wrg">-0.25</span>
+
+                            <span class="ques-time" id="timerdisplay">00:00</span>
+
+                        </div>
+
+                    </div>
+                    <div class="op-scroll">
+                        <span class="dn-scroll">&#11015</span>
+                    </div>
+                </div>
+
+                <div class="left-pt3">
+                    <div class="ques-div">
+                        <div class="ques ques1" id="text-div">
+
+
+
+
+                            The problem of gender inequality has been a persistent and unresolved issue in social and
+                            professional life in the United States of America and globally. The implications of the
+                            problem for higher education proved to be omnipresent, including women’s underrepresentation
+                            in leadership positions, gender-based discrimination cases, sexual harassment,
+                            inequality-oriented organizational culture, and HR-practices. Despite measures implemented
+                            to prevent and eliminate gender issues, including regulatory, organizational, and community
+                            initiatives, inequality remains prevalent in higher education settings, threatening career
+                            advancement and personal accomplishment opportunities for women. Representation of women in
+                            higher education leadership positions is scarce, illustrating male dominance in science,
+                            technologies, engineering, and mathematics. <br><br>This dissertation aimed to identify the
+                            causes and prevalence of gender-based discrimination and explore the most effective
+                            practices for eliminating the problem and develop a diversity training program for higher
+                            education institutions. The theoretical frameworks used for the study were the Feminist
+                            Standpoint Theory and the Neo-Positivist Theory. <br><br>The research utilized a qualitative
+                            design to investigate the problem and find solutions to it. Data was collected through
+                            document review and online interviews with thirteen sampled participants representing a
+                            diverse population of higher education leaders from the USA. <br><br> The data analysis
+                            method that allowed for categorizing participants’ responses was thematic analysis.
+                            Identified themes and the interviewed leaders’ recommendations were used to develop an
+                            evidence-based interactive training program for higher education staff.
+
+                        </div>
+                    </div>
+                    <div class="option-div">
+
+                        <div class="op-ques qs1">
+                            The problem of gender inequality has been a persistent and unresolved issue in social and
+                            professional life in the United States of America and globally.
+                            Data was collected through document review and online interviews with thirteen sampled
+                            participants representing a diverse population of higher education leaders from the USA.
+                            <br><br> The data analysis method that allowed for categorizing participants’ responses was
+                            thematic analysis. Identified themes and the interviewed leaders’ recommendations were used
+                            to develop an evidence-based interactive training program for higher education staff.
+
+
+                        </div>
+
+                        <div class="op-options qs1-ops">
+                            <label for="" class="lb qs1lb1"><input type="radio" name="" id="">Option1</label>
+                            <label for="" class="lb qs1lb2"><input type="radio" name="" id="">Option2</label>
+                            <label for="" class="lb qs1lb3"><input type="radio" name="" id="">Option3</label>
+                            <label for="" class="lb qs1lb4"><input type="radio" name="" id="">Option4</label>
+                            <label for="" class="lb qs1lb5"><input type="radio" name="" id="">Option5</label>
+                        </div>
+
+
+                    </div>
+                    <div class="fs-btn">
+                        <i class="fa-solid fa-chevron-right" id="chevron-right"></i>
+                        <i class="fa-solid fa-chevron-left" id="chevron-left">
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <!-- ................................ -->
+            <div class="left-pt4">
+
+                <div class="lp4-part1">
+                    <button class="prev-ques-btns">Previous</button>
+                    <button class="mk-for-rev">Mark for review <br> & Next</button>
+                    <button class="clr-rev">Clear response</button>
+                </div>
+
+                <div class="lp4-part2 nxt-ques-btns"><button>Next</button></div>
+
+            </div>
+        </div>
+        <!-- .......................... -->
+        <div class="mock-right">
+            <div class="ryt-pt1"></div>
+            <!-- ...................................... -->
+            <div class="ryt-pt2">
+
+                <div class="ques-status-info">
+                    <div class="ques-status-btn" id="answrd">
+                        0
+                    </div>
+                    <p>Answered</p>
+                </div>
+
+                <div class="ques-status-info">
+                    <div class="ques-status-btn" id="m-f-r-a">
+                        0
+                        <div class="greenn-dot"></div>
+                    </div>
+                    <p>Mark for review and Answered</p>
+
+                </div>
+
+                <div class="ques-status-info">
+                    <div class="ques-status-btn" id="m-f-r">
+                        0
+                    </div>
+                    <p>Mark for review</p>
+
+                </div>
+
+                <div class="ques-status-info">
+                    <div class="ques-status-btn" id="n-a">
+                        0
+                    </div>
+                    <p>Not Answered</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ........................... -->
+            <div class="ryt-pt3">
+                <div class="hd">
+                    <h4>Choose a question</h4>
+                </div>
+
+
+
+                <div class="qs-hold">
+
+                    <button class="ryt-ques-no1">1</button>
+                    <button class="ryt-ques-no2">2</button>
+                    <button class="ryt-ques-no3">3</button>
+                    <button class="ryt-ques-no4">4</button>
+                    <button class="ryt-ques-no5">5</button>
+                    <button class="ryt-ques-no6">6</button>
+                    <button class="ryt-ques-no7">7</button>
+                    <button class="ryt-ques-no8">8</button>
+                    <button class="ryt-ques-no9">9</button>
+                    <button class="ryt-ques-no10">10</button>
+                    <button class="ryt-ques-no11">11</button>
+                    <button class="ryt-ques-no12">12</button>
+                    <button class="ryt-ques-no13">13</button>
+                    <button class="ryt-ques-no14">14</button>
+                    <button class="ryt-ques-no15">15</button>
+                    <button class="ryt-ques-no16">16</button>
+                    <button class="ryt-ques-no17">17</button>
+                    <button class="ryt-ques-no18">18</button>
+                    <button class="ryt-ques-no19">19</button>
+                    <button class="ryt-ques-no20">20</button>
+                    <button class="ryt-ques-no21">21</button>
+                    <button class="ryt-ques-no22">22</button>
+                    <button class="ryt-ques-no23">23</button>
+                    <button class="ryt-ques-no24">24</button>
+                    <button class="ryt-ques-no25">25</button>
+                    <button class="ryt-ques-no26">26</button>
+                    <button class="ryt-ques-no27">27</button>
+                    <button class="ryt-ques-no28">28</button>
+                    <button class="ryt-ques-no29">29</button>
+                    <button class="ryt-ques-no30">30</button>
+
+
+
+                </div>
+
+
+
+
+                <div class="ryt-pt4">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- ................................ -->
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="timer.js"></script>
+    <script src="mock-screen.js"></script>
+    <script src="Mock Navigation.js"></script>
+    <!-- <script src="deepseek js code for mock.js"></script> -->
+
+</body>
+
+</html>

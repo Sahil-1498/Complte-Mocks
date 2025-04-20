@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+.header{
+    height: 4vw;
+    width: 100%;
+    background-color: rgb(1, 102, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo img{
+    height: 3.7vw;
+    width: 3.7vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    margin: 2vw;
+    cursor: pointer;
+}
+
+.sub-header{
+    height: 3vw;
+    width: 100%;
+    background-color: rgb(105, 154, 227);
+    display: flex;
+    color: white;
+    font-size: 2.5vw;
+    position: fixed;
+    top: 4vw;
+    z-index: 1000;
+}
+
+.sub-bars{
+    display: flex;
+    height: 100%;
+    margin: 1vw;
+    justify-content: stretch;
+    cursor: pointer;
+    transition: background-color 0.5s, color 1s;
+}
+.sub-bars:hover{
+    background-color: rgb(192, 223, 246);
+    color: black;
+}
+
+.sub-side-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(2, 2, 2, 0.375);
+    backdrop-filter: blur(1px);
+    top: 7vw;
+    left: -20vw;
+    border-right: 0.2vw solid rgb(255, 255, 255);
+    transition: 0.5s;
+    z-index: 1000;
+}
+.sub-ops{
+    height: 4.2vw;
+    width: 13vw;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1.2vw;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sub-ops:hover{
+    background-color: #ffffff2d;
+    color: #131921;
+    font-weight: 700;
+}
+
+.head-options{
+    height: 5.8vw;
+    width: 30vw;
+    background-color: #c2e8fc00;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1vw;
+}
+
+.head-options a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2vw;
+    font-weight: 700;
+    height: 3.7vw;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.3vw;
+    transition: 0.3s;
+}
+
+.head-options a:hover{
+    background-color: #ffffff7d;
+    color: rgb(19, 17, 36);
+}
+
+.userr{
+    height: 3.5vw;
+    width: 6.5vw;
+    background-color: #0400f8;
+    color: rgb(255, 255, 255);
+    font-size: 1.2vw;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    border-radius: 0.5vw;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.937) ;
+    border-left: 2px solid rgba(255, 255, 255, 0.937);
+    border-top: 2px solid rgb(0, 195, 255);
+    border-right: 2px solid rgb(0, 195, 255);
+    cursor: pointer;
+}
+
+.userr:focus {
+    border-top: 2px solid rgba(255, 255, 255, 0.937);
+    border-right: 2px solid rgba(255, 255, 255, 0.937);
+    border-bottom: 2px solid rgb(0, 195, 255);
+    border-left: 2px solid rgb(0, 195, 255);
+}
+
+
+/* .......................................................... */
+
+
+.user-log-box{
+    height: 35vw;
+    width: 25vw;
+    border: 2px solid rgba(255, 255, 255, 0);
+    position: fixed;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    display: block;
+    transition: 2s;
+    display: none;
+}
+
+.close-xmark, .close-signup-xmark{
+    height: 1.5vw;
+    width: 1.5vw;
+    transition: 1s;
+    color: transparent;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 0.4vw;
+   right: 0.5vw;
+   cursor: pointer;
+}
+
+.close-xmark:hover, .close-signup-xmark:hover{
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.login{
+    height: 100%;
+    width: 100%;
+    background-color: lab(100% 0.01 -0.01 / 0.377);
+    background-color: #0095ff6b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1vw;
+    border: 0.5vh solid #fff;
+    backdrop-filter: blur(px);
+    transform: rotate();
+    transition: 1s;
+    
+}
+
+@keyframes userranimation {
+    0%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid white; border-top: 0.3VW solid white;}
+    
+    25%{border-left: 0.3vw solid rgb(255, 255, 255); border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid #00aeff; border-top: 0.3VW solid white;}
+
+    50%{border-left: 0.3vw solid rgb(255, 255, 255); border-bottom: 0.3vw solid rgb(255, 255, 255); border-right: 0.3vw solid #00aeff; border-top: 0.3VW solid #00aeff;}
+    75%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid rgb(255, 255, 255); border-right: 0.2vw solid white; border-top: 0.3vw solid #00aeff;}
+
+    100%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid white; border-top: 0.3vw solid white;}
+}
+
+
+.user-logo{
+    height: fit-content;
+    width: fit-content;
+    font-size: 20vh;
+    color: #131921;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 0.3vw solid white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2vh;
+   
+}
+
+.user-logo:hover{
+    animation-name: bdranimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.login-inputs{
+    height: 50%;
+    width: 98%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.userid,.userpass{
+    height: 7vh;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.login-submit{
+    height: 7vh;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 3.5vh;
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    position: relative;
+    background-color: #131921;
+    color: white;
+    cursor: pointer;
+}
+
+.login-user-logo{
+    height: 7vh;
+    width: 4vw;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+}
+
+.user-id{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 1.2vw;
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    border: none;
+    padding: 0 3vw 0 1vw;
+}
+
+.info-indicator{
+    height: 100%;
+    width: 3vw;
+    position: absolute;
+    background-color: #a40f0f00;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.signup-link{
+    height: 20%;
+    width: 98%;
+    border-top: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+
+
+.signup-link-btn{
+    height: 7vh;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 3.5vh;
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    position: relative;
+    background-color: #131921;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sign-up-box{
+    height: 100%;
+    width: 100%;
+    background-color: #0095ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 1vw;
+    border: 0.5vh solid #fff;
+    backdrop-filter: blur(px);
+    transform: rotate();
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    transform: rotateY(-180deg);
+    backface-visibility:hidden;
+}
+
+
+.sign-up-box h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+.form-fields{
+    height: 60%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-bottom: 0.1vw solid white;
+}
+
+
+.sign-upnames{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.1vw solid white;
+}
+
+.sign-upnames input{
+    height: 7vh;
+    width: 11.7vw;
+    border-radius: 4vw;
+    padding: 0 1vw;
+    font-size: 1.2vw;
+}
+
+.date {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date input{
+    height: 7vh;
+    width: 100%;
+    border-radius: 4vw;
+    padding: 0 1vw;
+    font-size: 1.2vw;
+}
+
+
+.paas-set{
+    height: 25%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.paas-set input{
+    height: 7vh;
+    width: 100%;
+    border-radius: 4vw;
+    padding: 0 1vw;
+    font-size: 1.2vw;
+}
+
+@keyframes bdranimation {
+    0%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid white; border-top: 0.3VW solid white;}
+    
+    25%{border-left: 0.3vw solid rgb(255, 255, 255); border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid #00aeff; border-top: 0.3VW solid white;}
+
+    50%{border-left: 0.3vw solid rgb(255, 255, 255); border-bottom: 0.3vw solid rgb(255, 255, 255); border-right: 0.3vw solid #00aeff; border-top: 0.3VW solid #00aeff;}
+    75%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid rgb(255, 255, 255); border-right: 0.2vw solid white; border-top: 0.3vw solid #00aeff;}
+
+    100%{border-left: 0.3vw solid #00aeff; border-bottom: 0.3vw solid #00aeff; border-right: 0.3vw solid white; border-top: 0.3vw solid white;}
+}
+
+
+
+
+
+.signup-btns,.login-link-btn{
+    height: 7vh;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 3.5vh;
+    display: flex;
+    font-size: 2vw;
+    justify-content: center;
+    position: relative;
+    background-color: #131921;
+    color: white;
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+.login-link-box{
+    height: 20%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.3vw  solid rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+
+
+
+
+
+/* ................................................ */
+.hero{
+    height: 50vh;
+    width: 100%;
+
+}
+
+.hero-img{
+    height: 100%;
+    width: 100%;
+    background-image: url('hero1.png');
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.subject-section{
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background: #3a7bb4;
+    position: relative;
+}
